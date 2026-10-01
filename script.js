@@ -352,3 +352,19 @@ document.querySelectorAll(".filter").forEach((btn) =>
     });
   })
 );
+
+/* Aviso de privacidad */
+(function () {
+  const dlg = document.getElementById("privacyDialog");
+  if (!dlg) return;
+  const close = () => dlg.close();
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest("[data-privacy]");
+    if (!a) return;
+    e.preventDefault();
+    if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
+  });
+  document.getElementById("privacyClose")?.addEventListener("click", close);
+  document.getElementById("privacyOk")?.addEventListener("click", close);
+  dlg.addEventListener("click", (e) => { if (e.target === dlg) close(); });
+})();
