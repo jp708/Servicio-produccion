@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Producción audiovisual para empresas: producción ejecutiva, crew, equipo, permisos, postproducción y logística en Costa Rica." />
+  <meta name="theme-color" content="#070707" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Producción para Empresas | deleFOCO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="icono.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="logo-delefoco-icono.png" as="image" />
+</head>
+<body class="mode-b2b theme-dark" data-audience="b2b">
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="deleFOCO">
+      <img
+        src="logo.png"
+        alt="deleFOCO"
+        class="logo"
+        width="180"
+        height="40"
+        decoding="async"
+      >
+    </a>
+
+    <nav class="nav" id="mainNav" aria-label="Navegación principal" data-en-aria-label="Main navigation">
+      <a href="#servicios" data-en="Services">Servicios</a>
+      <a href="#comunidad-empresas" data-en="deleFOCO">deleFOCO</a>
+      <a href="#especialidades" data-en="Specialties">Especialidades</a>
+      <a href="#marketplace" data-en="Directory">Directorio</a>
+      <a href="#ser-parte" data-en="Register">Registrar</a>
+      <a href="#contacto" data-en="Contact">Contacto</a>
+    </nav>
+
+    <div class="controls">
+      <div class="segmented" role="group" aria-label="Idioma" data-en-aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="es">ES</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="color-toggle" id="colorToggle" type="button" aria-label="Cambiar tema" title="Cambiar tema" aria-pressed="false">
+        <span class="color-toggle-icon" aria-hidden="true">☾</span>
+        <span class="color-toggle-text">Oscuro</span>
+      </button>
+      <div class="audience-switch" role="group" aria-label="Tipo de usuario" data-en-aria-label="User type">
+        <span class="audience-item active" aria-current="page" data-en="Hire a service">Contratar servicio</span>
+        <a class="audience-item" href="https://serparte-produccion.vercel.app/" data-en="I want to join">Quiero ser parte</a>
+      </div>
+      <a class="header-cta" id="headerWhatsApp" href="https://wa.me/50686823430?text=Hola%2C%20quiero%20cotizar%20los%20servicios%20de%20producci%C3%B3n%20de%20deleFOCO." target="_blank" rel="noopener" role="button">Hablar con un asesor</a>
+    </div>
+  </header>
+
+  <main>
+
+  <section class="hero" id="inicio">
+    <div class="hero-bg-photo"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grid"></div>
+
+    <img
+      src="logo-delefoco-icono.png"
+      alt=""
+      class="hero-delefoco-icon"
+      aria-hidden="true"
+      width="640"
+      height="640"
+      decoding="async"
+      fetchpriority="low"
+    >
+
+    <div class="hero-flex">
+      <div class="hero-content">
+        <p class="eyebrow" data-en="PRODUCTION · deleFOCO">PRODUCCIÓN · deleFOCO</p>
+        <h1 id="heroTitle">
+          Su producción, resuelta con<br>
+          <span>deleFOCO.</span>
+        </h1>
+        <p id="heroText">
+          Planificamos y ejecutamos su proyecto audiovisual junto a las empresas, productoras y profesionales
+          de deleFOCO: crew, equipo, locaciones, permisos y entrega final.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="#contacto" id="heroPrimary">
+            Solicitar cotización <span>→</span>
+          </a>
+          <a class="btn btn-outline" href="#servicios" id="heroSecondary">
+            Ver servicios
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span><b>01</b> <span data-en="Idea">Idea</span></span>
+          <span><b>02</b> <span data-en="Shoot">Rodaje</span></span>
+          <span><b>03</b> <span data-en="Delivery">Entrega</span></span>
+        </div>
+      </div>
+
+      <div class="hero-carousel" id="heroCarousel" aria-roledescription="carrusel" data-en-aria-roledescription="carousel" aria-label="Producciones destacadas" data-en-aria-label="Featured productions">
+        <span class="hero-carousel-tag" data-en="PORTFOLIO">PORTAFOLIO</span>
+        <div class="hero-carousel-track">
+          <a class="hero-carousel-slide active" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Ver portafolio deleFOCO: producción en set" data-en-aria-label="See the deleFOCO portfolio: on-set production" style="background-image:url('crew.jpg');background-position:center 30%"></a>
+          <a class="hero-carousel-slide" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Ver portafolio deleFOCO: cámara y crew" data-en-aria-label="See the deleFOCO portfolio: camera and crew" style="background-image:url('camara.jpg');background-position:center 20%"></a>
+          <a class="hero-carousel-slide" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Ver portafolio deleFOCO: claqueta y rodaje" data-en-aria-label="See the deleFOCO portfolio: clapperboard and shoot" style="background-image:url('claqueta.jpg');background-position:center 25%"></a>
+          <a class="hero-carousel-slide" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Ver portafolio deleFOCO: locaciones en Costa Rica" data-en-aria-label="See the deleFOCO portfolio: locations in Costa Rica" style="background-image:url('sonido.jpg');background-position:center 30%"></a>
+        </div>
+        <button type="button" class="hero-carousel-arrow prev" id="heroCarouselPrev" aria-label="Anterior" data-en-aria-label="Previous">‹</button>
+        <button type="button" class="hero-carousel-arrow next" id="heroCarouselNext" aria-label="Siguiente" data-en-aria-label="Next">›</button>
+        <div class="hero-carousel-dots" id="heroCarouselDots" role="tablist" aria-label="Seleccionar imagen" data-en-aria-label="Select image">
+          <button type="button" class="active" data-index="0" role="tab" aria-selected="true" aria-label="Imagen 1" data-en-aria-label="Image 1"></button>
+          <button type="button" data-index="1" role="tab" aria-selected="false" aria-label="Imagen 2" data-en-aria-label="Image 2"></button>
+          <button type="button" data-index="2" role="tab" aria-selected="false" aria-label="Imagen 3" data-en-aria-label="Image 3"></button>
+          <button type="button" data-index="3" role="tab" aria-selected="false" aria-label="Imagen 4" data-en-aria-label="Image 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL DE PALABRAS -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span data-en="CAMERA">CÁMARA</span><i>●</i><span data-en="SOUND">SONIDO</span><i>●</i><span data-en="DIRECTION">DIRECCIÓN</span><i>●</i><span data-en="ART">ARTE</span><i>●</i><span data-en="LIGHTING">ILUMINACIÓN</span><i>●</i><span data-en="EDITING">EDICIÓN</span><i>●</i><span data-en="PRODUCTION">PRODUCCIÓN</span><i>●</i><span data-en="JUNIOR CREW">CREW JUNIOR</span>
+      </div>
+      <div class="marquee-group">
+        <span data-en="CAMERA">CÁMARA</span><i>●</i><span data-en="SOUND">SONIDO</span><i>●</i><span data-en="DIRECTION">DIRECCIÓN</span><i>●</i><span data-en="ART">ARTE</span><i>●</i><span data-en="LIGHTING">ILUMINACIÓN</span><i>●</i><span data-en="EDITING">EDICIÓN</span><i>●</i><span data-en="PRODUCTION">PRODUCCIÓN</span><i>●</i><span data-en="JUNIOR CREW">CREW JUNIOR</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONEXIÓN CON EL ECOSISTEMA deleFOCO -->
+  <section class="eco-band" id="conexion-ecosistema" aria-label="Ecosistema deleFOCO" data-en-aria-label="deleFOCO ecosystem">
+    <div class="eco-band-inner">
+      <img src="logo-delefoco-icono.png" alt="" class="eco-band-icon" width="56" height="56" decoding="async" aria-hidden="true">
+      <p class="eco-band-text">
+        <strong data-en="Production connected to the deleFOCO ecosystem.">Producción conectada al ecosistema deleFOCO.</strong>
+        <span data-en="Every project draws on deleFOCO's portfolio, supplier directory and locations.">Cada proyecto se apoya en el portafolio, el directorio de proveedores, las locaciones y deleFOCO.</span>
+      </p>
+      <nav class="eco-band-links" aria-label="Ecosistema deleFOCO" data-en-aria-label="deleFOCO ecosystem">
+        <a href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="Portfolio">Portafolio</a>
+        <a href="https://delefoco.com/comunidad/" target="_blank" rel="noopener" data-en="deleFOCO">deleFOCO</a>
+        <a href="#marketplace" data-en="Directory">Directorio</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- SUB-SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark" data-en="WHAT WE DO">LO QUE HACEMOS</p>
+        <h2 id="servicesTitle" data-en="Production made simple.">Producción sin complicaciones.</h2>
+      </div>
+      <p id="servicesIntro" data-en="Six areas to take your company's project from idea to delivery, executed with the companies and professionals of deleFOCO.">Seis áreas para llevar el proyecto de su empresa de la idea a la entrega, ejecutadas con las empresas y profesionales de deleFOCO.</p>
+    </div>
+
+    <div class="service-grid service-grid-6">
+      <article class="service-card">
+        <span class="service-number">01</span>
+        <div class="icon">⌖</div>
+        <h3 data-en="Executive production">Producción ejecutiva</h3>
+        <p data-en="Planning, coordination and overall supervision with producers from deleFOCO.">Planificación, coordinación y supervisión general con productoras de deleFOCO.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-number">02</span>
+        <div class="icon">✓</div>
+        <h3 data-en="Line production">Línea de producción</h3>
+        <p data-en="Budget, schedule and cost control with deleFOCO suppliers.">Presupuesto, cronograma y control de costos con proveedores de deleFOCO.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-number">03</span>
+        <div class="icon">↔</div>
+        <h3 data-en="Technical crew">Crew técnico</h3>
+        <p data-en="Camera, sound, lighting and assistant professionals from the deleFOCO directory.">Profesionales de cámara, sonido, luces y asistencia del directorio de deleFOCO.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-number">04</span>
+        <div class="icon">◎</div>
+        <h3 data-en="Equipment / Gear">Equipo / Gear</h3>
+        <p data-en="Cameras, lights and grip from deleFOCO rental houses, such as Cine House Costa Rica.">Cámaras, luces y grip de casas de alquiler de deleFOCO, como Cine House Costa Rica.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-number">05</span>
+        <div class="icon">◈</div>
+        <h3 data-en="Post-production">Postproducción</h3>
+        <p data-en="Editing, color, sound and motion graphics with deleFOCO studios and editors.">Edición, color, sonido y motion graphics con estudios y editores de deleFOCO.</p>
+      </article>
+      <article class="service-card">
+        <span class="service-number">06</span>
+        <div class="icon">☰</div>
+        <h3 data-en="Permits and logistics">Permisos y logística</h3>
+        <p data-en="Paperwork, locations, transport and catering with deleFOCO suppliers.">Trámites, locaciones, transporte y catering con proveedores de deleFOCO.</p>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- PROCESO DE PRODUCCIÓN -->
+  <section class="process section" id="proceso">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark" data-en="HOW IT WORKS">CÓMO FUNCIONA</p>
+        <h2 data-en="From idea to delivery.">De la idea a la entrega.</h2>
+      </div>
+      <p data-en="This is how we work with your company, step by step, backed by deleFOCO. You always know what we are doing and what we need from you.">Así trabajamos con su empresa, paso a paso, con el respaldo de deleFOCO. Usted siempre sabe qué estamos haciendo y qué necesitamos de su parte.</p>
+    </div>
+    <ol class="flow-list">
+      <li class="flow-step">
+        <span class="flow-num">01</span>
+        <div class="flow-main">
+          <h3 data-en="Briefing and kickoff call">Brief y reunión inicial</h3>
+          <p data-en="We meet (in person or online) to understand what you want to communicate, to whom and where it will be published.">Nos reunimos (presencial o virtual) para entender qué quiere comunicar, a quién y dónde se publicará.</p>
+        </div>
+        <div class="flow-you">
+          <span class="flow-you-label" data-en="What we need from you">Lo que necesitamos de usted</span>
+          <p data-en="Objective, audience, key dates and estimated budget.">Objetivo, público, fechas clave y presupuesto estimado.</p>
+        </div>
+      </li>
+      <li class="flow-step">
+        <span class="flow-num">02</span>
+        <div class="flow-main">
+          <h3 data-en="Proposal and quote">Propuesta y cotización</h3>
+          <p data-en="We build the proposal with scope, schedule and a detailed budget, quoting with deleFOCO companies.">Armamos la propuesta con alcance, cronograma y presupuesto detallado, cotizando con empresas de deleFOCO.</p>
+        </div>
+        <div class="flow-you">
+          <span class="flow-you-label" data-en="What we need from you">Lo que necesitamos de usted</span>
+          <p data-en="Review the proposal and approve the budget.">Revisar la propuesta y aprobar el presupuesto.</p>
+        </div>
+      </li>
+      <li class="flow-step">
+        <span class="flow-num">03</span>
+        <div class="flow-main">
+          <h3 data-en="Pre-production">Preproducción</h3>
+          <p data-en="We choose crew, gear and location from the deleFOCO directory, handle permits and set the shooting plan.">Elegimos crew, equipo y locación del directorio de deleFOCO, gestionamos permisos y definimos el plan de rodaje.</p>
+        </div>
+        <div class="flow-you">
+          <span class="flow-you-label" data-en="What we need from you">Lo que necesitamos de usted</span>
+          <p data-en="Approve script or ideas, locations and shooting dates.">Aprobar guion o ideas, locaciones y fechas de rodaje.</p>
+        </div>
+      </li>
+      <li class="flow-step">
+        <span class="flow-num">04</span>
+        <div class="flow-main">
+          <h3 data-en="Shooting">Rodaje</h3>
+          <p data-en="We coordinate the set day by day: camera, sound, lighting, logistics and talent, with one team in charge of everything.">Coordinamos el set día a día: cámara, sonido, luces, logística y talento, con un equipo a cargo de todo.</p>
+        </div>
+        <div class="flow-you">
+          <span class="flow-you-label" data-en="What we need from you">Lo que necesitamos de usted</span>
+          <p data-en="Name a contact person and, if you wish, attend the shoot.">Designar a una persona de contacto y, si lo desea, acompañar el rodaje.</p>
+        </div>
+      </li>
+      <li class="flow-step">
+        <span class="flow-num">05</span>
+        <div class="flow-main">
+          <h3 data-en="Post-production">Postproducción</h3>
+          <p data-en="We edit, color grade, work on sound and motion graphics, and share progress for your review.">Editamos, corregimos color, trabajamos el sonido y el motion graphics, y le compartimos avances para revisión.</p>
+        </div>
+        <div class="flow-you">
+          <span class="flow-you-label" data-en="What we need from you">Lo que necesitamos de usted</span>
+          <p data-en="Review progress and send feedback.">Revisar los avances y enviar comentarios.</p>
+        </div>
+      </li>
+      <li class="flow-step">
+        <span class="flow-num">06</span>
+        <div class="flow-main">
+          <h3 data-en="Delivery">Entrega</h3>
+          <p data-en="We deliver the final files in the formats you need (web, social, TV, events) and close the project.">Le entregamos los archivos finales en los formatos que necesita (web, redes, TV, eventos) y cerramos el proyecto.</p>
+        </div>
+        <div class="flow-you">
+          <span class="flow-you-label" data-en="What we need from you">Lo que necesitamos de usted</span>
+          <p data-en="Receive the files and confirm delivery.">Recibir los archivos y confirmar la entrega.</p>
+        </div>
+      </li>
+    </ol>
+    <div class="section-actions">
+      <a class="btn btn-red" href="#contacto"><span data-en="Start my project" style="transform:none">Iniciar mi proyecto</span> <span>→</span></a>
+    </div>
+  </section>
+
+  <!-- EMPRESAS DE deleFOCO -->
+  <section class="section" id="comunidad-empresas">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark" data-en="deleFOCO">deleFOCO</p>
+        <h2 data-en="Companies and producers of deleFOCO.">Empresas y productoras de deleFOCO.</h2>
+      </div>
+      <p data-en="Producers, studios and crews that are part of the audiovisual ecosystem deleFOCO promotes and advertises.">Productoras, estudios y equipos que forman parte del ecosistema audiovisual que impulsamos y publicitamos.</p>
+    </div>
+    <div class="cases-grid community-grid">
+      <article class="case-card">
+        <a class="case-image" href="https://delefoco.com/?action=production-profile-view&amp;id=1055" target="_blank" rel="noopener" aria-label="IMAGO Producciones en deleFOCO" data-en-aria-label="IMAGO Producciones on deleFOCO" style="background-image:url('rodaje.jpg');background-position:center 40%"></a>
+        <div class="case-body">
+          <div class="case-meta">
+            <span class="case-client" data-en="Producer">Productora</span>
+            <span class="case-type" data-en="Events · Advertising">Eventos · Publicidad</span>
+          </div>
+          <h3>IMAGO Producciones</h3>
+          <p class="case-desc" data-en="Creative solutions for brands: events, BTL, digital and traditional campaigns in Costa Rica.">Soluciones creativas para marcas: eventos, BTL, campañas digitales y tradicionales en Costa Rica.</p>
+          <a class="text-btn case-link" href="https://delefoco.com/?action=production-profile-view&amp;id=1055" target="_blank" rel="noopener" data-en="View profile →">Ver perfil →</a>
+        </div>
+      </article>
+      <article class="case-card">
+        <a class="case-image" href="https://delefoco.com/?action=production-profile-view&amp;id=1063" target="_blank" rel="noopener" aria-label="Cine House Costa Rica en deleFOCO" data-en-aria-label="Cine House Costa Rica on deleFOCO" style="background-image:url('estudio-tv.jpg');background-position:center"></a>
+        <div class="case-body">
+          <div class="case-meta">
+            <span class="case-client" data-en="Rental · Gear">Rental · Gear</span>
+            <span class="case-type" data-en="Central America">Centroamérica</span>
+          </div>
+          <h3>Cine House Costa Rica</h3>
+          <p class="case-desc" data-en="High-end camera and lighting rental. Based in Costa Rica, serving the whole region.">Alquiler de cámara e iluminación de alto nivel. Base en Costa Rica, servicio para toda la región.</p>
+          <a class="text-btn case-link" href="https://delefoco.com/?action=production-profile-view&amp;id=1063" target="_blank" rel="noopener" data-en="View profile →">Ver perfil →</a>
+        </div>
+      </article>
+      <article class="case-card">
+        <a class="case-image" href="https://delefoco.com/?action=production-profile-view&amp;id=1053" target="_blank" rel="noopener" aria-label="De Raíz Entertainment en deleFOCO" data-en-aria-label="De Raíz Entertainment on deleFOCO" style="background-image:url('equipo.jpg');background-position:center 30%"></a>
+        <div class="case-body">
+          <div class="case-meta">
+            <span class="case-client" data-en="Producer">Productora</span>
+            <span class="case-type" data-en="Brand · Content">Marca · Contenido</span>
+          </div>
+          <h3>De Raíz Entertainment</h3>
+          <p class="case-desc" data-en="Productions for brand development, fiction, documentaries and shows with a creative approach.">Producciones para desarrollo de marca, ficción, documentales y programas con enfoque creativo.</p>
+          <a class="text-btn case-link" href="https://delefoco.com/?action=production-profile-view&amp;id=1053" target="_blank" rel="noopener" data-en="View profile →">Ver perfil →</a>
+        </div>
+      </article>
+      <article class="case-card">
+        <a class="case-image" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Portafolio deleFOCO" data-en-aria-label="deleFOCO portfolio" style="background-image:url('ciclorama.jpg');background-position:center"></a>
+        <div class="case-body">
+          <div class="case-meta">
+            <span class="case-client" data-en="Portfolio">Portafolio</span>
+            <span class="case-type" data-en="deleFOCO work">Trabajos de deleFOCO</span>
+          </div>
+          <h3 data-en="deleFOCO portfolio">Portafolio deleFOCO</h3>
+          <p class="case-desc" data-en="Real productions from deleFOCO: shoots, crew, locations and final deliveries.">Producciones reales de deleFOCO: rodajes, crew, locaciones y entregas finales.</p>
+          <a class="text-btn case-link" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="See portfolio →">Ver portafolio →</a>
+        </div>
+      </article>
+    </div>
+  <div class="section-actions">
+      <a class="btn btn-red" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener"><span data-en="See full deleFOCO directory" style="transform:none">Ver directorio completo de deleFOCO</span> <span>→</span></a>
+      <a class="btn btn-outline" href="https://delefoco.com/?action=featured-production" target="_blank" rel="noopener" data-en="Featured companies">Empresas destacadas</a>
+    </div>
+  </section>
+
+  <!-- ESPECIALIDADES DE PRODUCCIÓN -->
+  <section class="catalog-section" id="especialidades">
+    <div class="section-heading light">
+      <div>
+        <p class="eyebrow" data-en="SPECIALTIES">ESPECIALIDADES</p>
+        <h2 data-en="Specialties that elevate your production.">Especialidades que elevan su producción.</h2>
+      </div>
+      <p data-en="Technical and creative disciplines that complement executive production. Tap any image to see real work in the deleFOCO portfolio.">Disciplinas técnicas y creativas que complementan la producción ejecutiva. Toque cualquier imagen para ver trabajos reales en el portafolio de deleFOCO.</p>
+    </div>
+    <div class="filters">
+      <button type="button" class="filter active" data-filter="all" data-en="All">Todas</button>
+      <button type="button" class="filter" data-filter="tecnico" data-en="Technical">Técnico</button>
+      <button type="button" class="filter" data-filter="creativo" data-en="Creative">Creativo</button>
+      <button type="button" class="filter" data-filter="logistica" data-en="Logistics">Logística</button>
+    </div>
+    <div class="location-grid" id="locationGrid">
+      <article class="location-card" data-type="tecnico">
+        <a class="location-image img-1" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Dirección de fotografía" data-en-aria-label="Cinematography">
+          <span data-en="Technical">Técnico</span>
+        </a>
+        <div class="location-body">
+          <h3 data-en="Cinematography">Dirección de fotografía</h3>
+          <p data-en="Framing, lighting and the visual look of the project">Encuadre, luz y look visual del proyecto</p>
+          <a class="text-btn" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="See in portfolio →">Ver en portafolio →</a>
+        </div>
+      </article>
+      <article class="location-card" data-type="tecnico">
+        <a class="location-image img-2" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Sonido en set" data-en-aria-label="On-set sound">
+          <span data-en="Technical">Técnico</span>
+        </a>
+        <div class="location-body">
+          <h3 data-en="On-set sound">Sonido en set</h3>
+          <p data-en="Clean capture and professional sound design">Captura limpia y diseño sonoro profesional</p>
+          <a class="text-btn" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="See in portfolio →">Ver en portafolio →</a>
+        </div>
+      </article>
+      <article class="location-card" data-type="creativo">
+        <a class="location-image img-3" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Dirección creativa" data-en-aria-label="Creative direction">
+          <span data-en="Creative">Creativo</span>
+        </a>
+        <div class="location-body">
+          <h3 data-en="Creative direction">Dirección creativa</h3>
+          <p data-en="Concept, tone and brand storytelling">Concepto, tono y narrativa de marca</p>
+          <a class="text-btn" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="See in portfolio →">Ver en portafolio →</a>
+        </div>
+      </article>
+      <article class="location-card" data-type="creativo">
+        <a class="location-image img-4" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Postproducción avanzada" data-en-aria-label="Advanced post-production">
+          <span data-en="Creative">Creativo</span>
+        </a>
+        <div class="location-body">
+          <h3 data-en="Advanced post-production">Postproducción avanzada</h3>
+          <p data-en="Color, motion and final delivery finish">Color, motion y acabado final de entrega</p>
+          <a class="text-btn" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="See in portfolio →">Ver en portafolio →</a>
+        </div>
+      </article>
+      <article class="location-card" data-type="logistica">
+        <a class="location-image img-5" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Locaciones y permisos" data-en-aria-label="Locations and permits">
+          <span data-en="Logistics">Logística</span>
+        </a>
+        <div class="location-body">
+          <h3 data-en="Locations and permits">Locaciones y permisos</h3>
+          <p data-en="Scouting, paperwork and set coordination">Scouting, trámites y coordinación de set</p>
+          <a class="text-btn" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="See in portfolio →">Ver en portafolio →</a>
+        </div>
+      </article>
+      <article class="location-card" data-type="logistica">
+        <a class="location-image img-6" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Crew y gear" data-en-aria-label="Crew and gear">
+          <span data-en="Logistics">Logística</span>
+        </a>
+        <div class="location-body">
+          <h3 data-en="Crew and gear">Crew y gear</h3>
+          <p data-en="Technical team and tailored professionals">Equipo técnico y profesionales a medida</p>
+          <a class="text-btn" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="See in portfolio →">Ver en portafolio →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- MARKETPLACE -->
+  <section class="section cases-section" id="marketplace">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark" data-en="deleFOCO DIRECTORY">DIRECTORIO deleFOCO</p>
+        <h2 data-en="Everything for your production, in one place.">Todo para su producción, en un solo lugar.</h2>
+      </div>
+      <p data-en="The deleFOCO directory brings together companies, professionals, talent, locations and gear across Costa Rica and Central America. Explore and contact them directly.">El directorio de deleFOCO reúne empresas, profesionales, talento, locaciones y equipos de Costa Rica y Centroamérica. Explore y contacte directamente.</p>
+    </div>
+    <div class="market-grid">
+      <a class="market-tile" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">◆</span>
+        <h3 data-en="Companies">Empresas</h3>
+        <p data-en="Producers and service companies">Productoras y casas de servicios</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+      <a class="market-tile" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">◎</span>
+        <h3 data-en="Professionals">Profesionales</h3>
+        <p data-en="Crew and set specialists">Crew y especialistas del set</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+      <a class="market-tile" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">★</span>
+        <h3 data-en="Talent">Talento</h3>
+        <p data-en="Actors and hosts for your production">Actores y presentadores para su producción</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+      <a class="market-tile" href="https://servicio-locaciones.vercel.app/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">⌖</span>
+        <h3 data-en="Locations">Locaciones</h3>
+        <p data-en="Filming spaces across the region">Espacios para filmar en la región</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+      <a class="market-tile" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">▣</span>
+        <h3 data-en="Gear">Equipos</h3>
+        <p data-en="Cameras, lights, grip and more">Cámaras, luces, grip y más</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+      <a class="market-tile" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">✦</span>
+        <h3 data-en="Props">Utilería</h3>
+        <p data-en="Art, props and set dressing">Arte, props y ambientación</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+      <a class="market-tile" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">➤</span>
+        <h3 data-en="Transport">Transporte</h3>
+        <p data-en="Shoot mobility and logistics">Movilidad y logística de rodaje</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+      <a class="market-tile" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span class="market-icon" aria-hidden="true">☰</span>
+        <h3 data-en="Services">Servicios</h3>
+        <p data-en="Catering, post-production and more">Catering, postproducción y más</p>
+        <span class="market-go" aria-hidden="true">→</span>
+      </a>
+    </div>
+    <div class="section-actions">
+      <a class="btn btn-red" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener"><span data-en="Explore the directory" style="transform:none">Explorar el directorio</span> <span>→</span></a>
+      <a class="btn btn-outline" href="#ser-parte" data-en="List my company">Publicar mi empresa</a>
+    </div>
+  </section>
+
+  <!-- ECOSISTEMA -->
+  <section class="section categories" id="ecosistema">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark" data-en="deleFOCO ECOSYSTEM">ECOSISTEMA deleFOCO</p>
+        <h2 data-en="Connected to the deleFOCO ecosystem.">Conectados con el ecosistema deleFOCO.</h2>
+      </div>
+      <p data-en="Your production draws on the whole deleFOCO ecosystem: locations, talent, professionals and opportunities in one place.">Su producción cuenta con todo el ecosistema deleFOCO: locaciones, talento, profesionales y oportunidades desde un mismo lugar.</p>
+    </div>
+
+    <div class="cat-grid">
+      <a class="cat-tile cat-acting" href="https://servicio-locaciones.vercel.app/" target="_blank" rel="noopener">
+        <span data-en="Locations">Locaciones</span>
+      </a>
+      <a class="cat-tile cat-script" href="https://delefoco.com/comunidad/" target="_blank" rel="noopener">
+        <span data-en="deleFOCO / Suppliers">deleFOCO / Proveedores</span>
+      </a>
+      <a class="cat-tile cat-production" href="#marketplace">
+        <span data-en="Directory">Directorio</span>
+      </a>
+    </div>
+    <div class="eco-flow" aria-label="Conexión con el ecosistema deleFOCO" data-en-aria-label="Connection to the deleFOCO ecosystem">
+      <div class="eco-node">
+        <span class="eco-node-label" data-en="You">Usted</span>
+        <strong data-en="Your company">Su empresa</strong>
+        <small data-en="Brief and production needs">Brief y necesidades de producción</small>
+      </div>
+      <span class="eco-arrow" aria-hidden="true">→</span>
+      <div class="eco-node eco-node-main">
+        <img src="logo-delefoco-icono.png" alt="" width="44" height="44" aria-hidden="true">
+        <strong data-en="Production deleFOCO">Producción deleFOCO</strong>
+        <small data-en="We plan, coordinate and deliver">Planificamos, coordinamos y entregamos</small>
+      </div>
+      <span class="eco-arrow" aria-hidden="true">→</span>
+      <div class="eco-node eco-node-net">
+        <span class="eco-node-label" data-en="Ecosystem">Ecosistema</span>
+        <div class="eco-chips"><a href="https://delefoco.com/comunidad/" target="_blank" rel="noopener" data-en="deleFOCO">deleFOCO</a><a href="https://servicio-locaciones.vercel.app/" target="_blank" rel="noopener" data-en="Locations">Locaciones</a><a href="https://delefoco.com/noticias/" target="_blank" rel="noopener" data-en="Magazine">Revista</a><a href="https://delefoco.com/servicios/" target="_blank" rel="noopener" data-en="Services">Servicios</a></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SER PARTE -->
+  <section class="section join-section" id="ser-parte">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow dark" data-en="REGISTER">REGISTRO</p>
+        <h2 data-en="Register your company on deleFOCO.">Registre su empresa en deleFOCO.</h2>
+      </div>
+      <p data-en="Register your company in four simple steps and show your services to all of deleFOCO.">Registre su empresa en cuatro pasos sencillos y muestre sus servicios a todo deleFOCO.</p>
+    </div>
+    <div class="join-grid">
+      <article class="join-card join-card-main">
+        <span class="join-tag" data-en="FOR COMPANIES AND PRODUCERS">PARA EMPRESAS Y PRODUCTORAS</span>
+        <h3 data-en="Showcase your company to deleFOCO">Destaque su empresa frente a deleFOCO</h3>
+        <ol class="join-steps">
+          <li><span>01</span><div><h4 data-en="Sign up">Regístrese</h4><p data-en="Create your deleFOCO account.">Cree su cuenta en deleFOCO.</p></div></li>
+          <li><span>02</span><div><h4 data-en="Create your company profile">Cree el perfil de su empresa</h4><p data-en="Add services, gear, contact details and location.">Agregue servicios, equipo, contacto y ubicación.</p></div></li>
+          <li><span>03</span><div><h4 data-en="Publish your portfolio">Publique su portafolio</h4><p data-en="Showcase projects, reel and the gear or spaces you offer.">Muestre proyectos, reel y los equipos o espacios que ofrece.</p></div></li>
+          <li><span>04</span><div><h4 data-en="Get discovered">Sea encontrada</h4><p data-en="Appear in the deleFOCO directory and receive quote requests.">Aparezca en el directorio de deleFOCO y reciba solicitudes de cotización.</p></div></li>
+        </ol>
+        <a class="btn btn-red" href="https://delefoco.com/registrarme/" target="_blank" rel="noopener"><span data-en="Register my company" style="transform:none">Registrar mi empresa</span> <span>→</span></a>
+      </article>
+      <div class="join-photos" aria-label="Portafolio deleFOCO" data-en-aria-label="deleFOCO portfolio">
+        <a class="join-photo join-photo-1" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Ver portafolio deleFOCO: producción en set" data-en-aria-label="See the deleFOCO portfolio: on-set production" style="background-image:url('rodaje.jpg');background-position:center 35%"><span data-en="Portfolio deleFOCO →">Portafolio deleFOCO →</span></a>
+        <a class="join-photo join-photo-2" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Ver portafolio deleFOCO: cámara y crew" data-en-aria-label="See the deleFOCO portfolio: camera and crew" style="background-image:url('producto.jpg');background-position:center"></a>
+        <a class="join-photo join-photo-3" href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" aria-label="Ver portafolio deleFOCO: rodaje" data-en-aria-label="See the deleFOCO portfolio: shoot" style="background-image:url('claqueta.jpg');background-position:center 20%"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="contact-section" id="contacto">
+    <div class="contact-intro">
+      <p class="eyebrow dark" data-en="LET'S TALK">HABLEMOS</p>
+      <h2 id="contactTitle">Cuéntenos qué quiere producir.</h2>
+      <p id="contactText">Complete el brief de su empresa y le contactaremos con los siguientes pasos de producción.</p>
+      <div class="contact-info">
+        <div><span>WhatsApp</span><strong>+506 8682-3430</strong></div>
+        <div><span>Email</span><strong>comunidad@delefoco.com</strong></div>
+      </div>
+    </div>
+
+    <form class="lead-form" id="leadForm">
+      <label>
+        <span data-en="Company">Empresa</span>
+        <input name="company" required placeholder="Nombre de la empresa" data-en-placeholder="Company name" />
+      </label>
+      <label>
+        <span data-en="Email">Correo</span>
+        <input type="email" name="email" required placeholder="correo@empresa.com" data-en-placeholder="name@company.com" />
+      </label>
+      <label>
+        <span data-en="Production type">Tipo de producción</span>
+        <select name="project" required>
+          <option value="" data-en="Select an option">Seleccione una opción</option>
+          <option data-en="Advertising">Publicidad</option>
+          <option data-en="Film / TV">Cine / TV</option>
+          <option data-en="Photography">Fotografía</option>
+          <option data-en="Corporate video">Video corporativo</option>
+          <option data-en="Other">Otro</option>
+        </select>
+      </label>
+      <label>
+        <span data-en="Project scope">Alcance del proyecto</span>
+        <input name="scope" required placeholder="Ej. 1 spot 30s, 2 días de rodaje..." data-en-placeholder="E.g. one 30s spot, 2 shooting days..." />
+      </label>
+      <label>
+        <span data-en="Dates">Fechas</span>
+        <input type="date" name="date" />
+      </label>
+      <label>
+        <span data-en="Estimated budget">Presupuesto estimado</span>
+        <input name="budget" placeholder="Opcional" data-en-placeholder="Optional" />
+      </label>
+      <label class="full">
+        <span data-en="Project brief">Brief del proyecto</span>
+        <textarea name="message" rows="5" placeholder="Objetivos, locaciones, crew y alcance..." data-en-placeholder="Goals, locations, crew and scope..."></textarea>
+      </label>
+      <label class="full">
+        <span data-en="Reference link (optional)">Link de referencia (opcional)</span>
+        <input name="link" inputmode="url" autocomplete="url" placeholder="Pegue aquí un link de Drive, YouTube, Vimeo..." data-en-placeholder="Paste a Drive, YouTube or Vimeo link here..." />
+      </label>
+      <button class="btn btn-red full" type="button" id="whatsappSubmit">
+        Solicitar cotización <span>→</span>
+      </button>
+      <p class="form-status full" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+  </main>
+
+  <footer class="footer-profesional">
+    <div class="footer-social">
+      <div class="footer-social-inner">
+        <h3 data-en="Connect with deleFOCO">Conecte con deleFOCO</h3>
+        <div class="social-list">
+          <a class="social-item" href="https://www.facebook.com/delefoco" target="_blank" rel="noopener" aria-label="Facebook">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg>
+            </span>
+            <span class="social-text"><strong data-en="Follow us">Síganos</strong><span data-en="on Facebook">en Facebook</span></span>
+          </a>
+          <a class="social-item" href="https://www.instagram.com/delefoco/" target="_blank" rel="noopener" aria-label="Instagram">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="social-text"><strong data-en="Follow us">Síganos</strong><span data-en="on Instagram">en Instagram</span></span>
+          </a>
+          <a class="social-item" href="https://api.whatsapp.com/send/?phone=50686823430" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <span class="social-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 21l1.65-4.9A8.5 8.5 0 1 1 8 19.4L3 21z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .7c-1-.4-2-1.4-2.4-2.4l.7-1-1-2L9 8.5z" fill="currentColor" stroke="none"/></svg>
+            </span>
+            <span class="social-text"><strong data-en="Write to us">Escríbanos</strong><span data-en="on WhatsApp">en WhatsApp</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-wrap">
+        <div class="footer-brand-area">
+          <a href="#inicio" class="footer-logo-link" aria-label="deleFOCO">
+            <img src="logo.png" alt="deleFOCO" class="logo footer-logo-img" width="180" height="40" loading="lazy" decoding="async">
+          </a>
+          <p><span data-en="deleFOCO · San José, Costa Rica">deleFOCO · San José, Costa Rica</span><br><a class="footer-eco-link" href="https://delefoco.com/" target="_blank" rel="noopener" data-en="Part of the deleFOCO ecosystem">Parte del ecosistema deleFOCO</a></p>
+        </div>
+        <div class="footer-column">
+          <h4 data-en="LOCATION">UBICACIÓN</h4>
+          <p>San José,<br>Costa Rica</p>
+        </div>
+        <div class="footer-column">
+          <h4 data-en="CONTACT">CONTACTO</h4>
+          <a href="tel:+50622244696">+506 2224-4696</a>
+          <a href="https://wa.me/50686823430" target="_blank" rel="noopener">WhatsApp +506 8682-3430</a>
+          <a href="mailto:comunidad@delefoco.com">comunidad@delefoco.com</a>
+        </div>
+        <div class="footer-column footer-important">
+          <h4 data-en="IMPORTANT">IMPORTANTE</h4>
+          <div class="footer-links footer-links-2col">
+            <a href="https://delefoco.com/" target="_blank" rel="noopener" data-en="About us">Nosotros</a>
+            <a href="https://delefoco.com/portafolio/" target="_blank" rel="noopener" data-en="Portfolio">Portafolio</a>
+            <a href="https://delefoco.com/comunidad/" target="_blank" rel="noopener" data-en="deleFOCO">deleFOCO</a>
+            <a href="#marketplace" data-en="Directory">Directorio</a>
+            <a href="https://servicio-locaciones.vercel.app/" target="_blank" rel="noopener" data-en="Locations">Locaciones</a>
+            <a href="#servicios" data-en="Services">Servicios</a>
+            <a href="https://delefoco.com/noticias/" target="_blank" rel="noopener" data-en="Magazine">Revista</a>
+            <a href="#contacto" data-en="Contact">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-en="© 2026 deleFOCO">© 2026 deleFOCO</span>
+        <div class="footer-bottom-links">
+          <a href="https://delefoco.com/" target="_blank" rel="noopener">delefoco.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
