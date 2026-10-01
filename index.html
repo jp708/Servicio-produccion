@@ -610,6 +610,11 @@
         <span data-en="Reference link (optional)">Link de referencia (opcional)</span>
         <input name="link" inputmode="url" autocomplete="url" placeholder="Pegue aquí un link de Drive, YouTube, Vimeo..." data-en-placeholder="Paste a Drive, YouTube or Vimeo link here..." />
       </label>
+      <label class="consent full">
+        <input type="checkbox" name="consent" required />
+        <span data-en="I authorize deleFOCO to use the data in this brief to contact me and prepare a quote, and I have read the <a href='#' data-privacy>Privacy Notice</a>.">Autorizo a deleFOCO a usar los datos de este brief para contactarme y preparar una cotización, y he leído el <a href="#" data-privacy>Aviso de privacidad</a>.</span>
+      </label>
+      <p class="form-note full" data-en="Your brief and budget are used only to prepare your quote. Please do not include confidential material in public links. <a href='#' data-privacy>Read the Privacy Notice</a>.">Su brief y presupuesto se usan únicamente para preparar su cotización. Por favor no incluya material confidencial en enlaces públicos. <a href="#" data-privacy>Leer el Aviso de privacidad</a>.</p>
       <button class="btn btn-red full" type="button" id="whatsappSubmit">
         Solicitar cotización <span>→</span>
       </button>
@@ -680,11 +685,41 @@
       <div class="footer-bottom">
         <span data-en="© 2026 deleFOCO">© 2026 deleFOCO</span>
         <div class="footer-bottom-links">
+          <a href="#" data-privacy data-en="Privacy Notice">Aviso de privacidad</a>
           <a href="https://delefoco.com/" target="_blank" rel="noopener">delefoco.com</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <dialog class="privacy-dialog" id="privacyDialog" aria-labelledby="privacyTitle">
+    <div class="privacy-head">
+      <h2 id="privacyTitle" data-en="Privacy Notice for Companies">Aviso de privacidad para empresas</h2>
+      <button type="button" class="privacy-close" id="privacyClose" aria-label="Cerrar" data-en-aria-label="Close">×</button>
+    </div>
+    <div class="privacy-body">
+      <p class="privacy-date" data-en="Last updated: October 2026">Última actualización: octubre de 2026</p>
+      <h3 data-en="Who is responsible">Quién es el responsable</h3>
+      <p data-en="deleFOCO, audiovisual community based in San José, Costa Rica, is responsible for the data you send through this quote request. Contact: comunidad@delefoco.com.">deleFOCO, comunidad audiovisual con sede en San José, Costa Rica, es responsable de los datos que usted envía mediante esta solicitud de cotización. Contacto: comunidad@delefoco.com.</p>
+      <h3 data-en="What data we collect">Qué datos recopilamos</h3>
+      <p data-en="Company name, contact email, production type, project scope, dates, estimated budget, project brief and, if you share it, a reference link. These may include personal data of the contact person.">Nombre de la empresa, correo de contacto, tipo de producción, alcance, fechas, presupuesto estimado, brief del proyecto y, si lo comparte, un enlace de referencia. Pueden incluir datos personales de la persona de contacto.</p>
+      <h3 data-en="What we use it for">Para qué lo usamos</h3>
+      <p data-en="To respond to your request, prepare a quote and plan the next production steps. This form is a quote request, not a binding contract.">Para responder su solicitud, preparar una cotización y planificar los siguientes pasos de producción. Este formulario es una solicitud de cotización y no constituye un contrato.</p>
+      <h3 data-en="Project and budget information">Información del proyecto y presupuesto</h3>
+      <p data-en="We handle your brief and budget with care and share them only with the people involved in preparing your quote, such as deleFOCO team members and the crew, producers or suppliers needed. Please do not include confidential material in public links.">Tratamos su brief y presupuesto con reserva y solo los compartimos con quienes participan en la preparación de su cotización, como el equipo de deleFOCO y el crew, productoras o proveedores necesarios. Le pedimos no incluir material confidencial en enlaces públicos.</p>
+      <h3 data-en="How your data travels">Cómo viajan sus datos</h3>
+      <p data-en="When you press the button, your answers open in WhatsApp so you can send them to our team. WhatsApp is operated by a third party and is subject to its own privacy policy.">Al presionar el botón, sus respuestas se abren en WhatsApp para que las envíe a nuestro equipo. WhatsApp es operado por un tercero y se rige por su propia política de privacidad.</p>
+      <h3 data-en="Third-party data">Datos de terceros</h3>
+      <p data-en="If you give us personal data of other people (your team, talent or contacts), you confirm that you are authorized to share it with us for this purpose.">Si nos proporciona datos personales de otras personas (su equipo, talento o contactos), usted confirma que está autorizado para compartirlos con nosotros para este fin.</p>
+      <h3 data-en="We do not sell your data">No vendemos sus datos</h3>
+      <p data-en="We do not sell your data or use it for purposes unrelated to your request.">No vendemos sus datos ni los usamos para fines ajenos a su solicitud.</p>
+      <h3 data-en="Your rights">Sus derechos</h3>
+      <p data-en="Under Costa Rican law on the protection of personal data (Law 8968) you can request access, rectification or deletion of your data, and withdraw your consent at any time, by writing to comunidad@delefoco.com.">De acuerdo con la ley costarricense de protección de datos personales (Ley 8968), puede solicitar acceso, rectificación o eliminación de sus datos y retirar su consentimiento en cualquier momento escribiendo a comunidad@delefoco.com.</p>
+      <h3 data-en="How long we keep it">Cuánto tiempo los conservamos</h3>
+      <p data-en="Only as long as needed to handle your request and any resulting project, or until you ask us to delete them.">Solo el tiempo necesario para atender su solicitud y el proyecto que resulte de ella, o hasta que nos pida eliminarlos.</p>
+    </div>
+    <div class="privacy-foot"><button type="button" class="btn btn-red" id="privacyOk" data-en="Understood">Entendido</button></div>
+  </dialog>
 
   <script src="script.js" defer></script>
 </body>
