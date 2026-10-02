@@ -320,9 +320,9 @@ applyLanguage();
 
 /* Header: Hablar con un asesor → WhatsApp según audiencia B2B/B2C */
 (function () {
-  const btn = document.getElementById("headerWhatsApp");
-  if (!btn) return;
-  btn.addEventListener("click", (e) => {
+  const btns = document.querySelectorAll("#headerWhatsApp, .nav-advisor");
+  if (!btns.length) return;
+  btns.forEach((btn) => btn.addEventListener("click", (e) => {
     e.preventDefault();
     const audience = "b2b";
     const messages = {
@@ -337,7 +337,7 @@ applyLanguage();
     const text = (messages[lang] || messages.es)[audience];
     const url = "https://wa.me/50686823430?text=" + encodeURIComponent(text);
     window.open(url, "_blank", "noopener,noreferrer");
-  });
+  }));
 })();
 
 /* Filtros de locaciones */
@@ -367,4 +367,16 @@ document.querySelectorAll(".filter").forEach((btn) =>
   document.getElementById("privacyClose")?.addEventListener("click", close);
   document.getElementById("privacyOk")?.addEventListener("click", close);
   dlg.addEventListener("click", (e) => { if (e.target === dlg) close(); });
+})();
+
+
+/* Menú hamburguesa (móvil / tablet) */
+(function () {
+  const bar = document.querySelector(".topbar"), btn = document.getElementById("navToggle");
+  if (!bar || !btn) return;
+  const set = (open) => { bar.classList.toggle("is-open", open); btn.setAttribute("aria-expanded", String(open)); };
+  btn.addEventListener("click", () => set(!bar.classList.contains("is-open")));
+  bar.addEventListener("click", (e) => { if (e.target.closest(".nav a, .header-cta, .audience-item")) set(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") set(false); });
+  window.matchMedia("(min-width:1281px)").addEventListener("change", (e) => { if (e.matches) set(false); });
 })();
